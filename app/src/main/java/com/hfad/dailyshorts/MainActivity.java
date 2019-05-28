@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
 
 
 
-    public static final String API_KEY="ee61e03e726c4912aef1ab65c1ec12ca";
+    public static final String API_KEY="PUT YOUR NEWSAPI.ORG API HERE";
     private RecyclerView recyclerView;
     private RecyclerView.LayoutManager layoutManager;
     private List<Article> articles = new ArrayList<>();
@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        MobileAds.initialize(this, "ca-app-pub-5893942264025838~1143759467");
+        MobileAds.initialize(this, "PUT YOUR ADMOB ID HERE");
 
         mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
